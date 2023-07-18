@@ -7,7 +7,8 @@
         "currency": "PKR",
         "location": "Lahore",
         "type": "used",
-        "featured": true
+        "featured": true,
+        "managed": true
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@
         "currency": "PKR",
         "location": "Islamabad",
         "type": "used",
-        "featured": true
+        "featured": true,
+        "managed": true
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@
         "currency": "PKR",
         "location": "Lahore",
         "type": "used",
-        "featured": true
+        "featured": true,
+        "managed": true
     },
     {
         "id": 4,
@@ -37,7 +40,8 @@
         "currency": "PKR",
         "location": "Lahore",
         "type": "used",
-        "featured": true
+        "featured": true,
+        "managed": true
     },
     {
         "id": 5,
@@ -47,7 +51,8 @@
         "currency": "PKR",
         "location": "Swabi",
         "type": "used",
-        "featured": true
+        "featured": true,
+        "managed": true
     },
     {
         "id": 6,
@@ -57,7 +62,8 @@
         "currency": "PKR",
         "location": "Lahore",
         "type": "used",
-        "featured": true
+        "featured": true,
+        "managed": true
     },
     {
         "id": 7,
@@ -67,7 +73,8 @@
         "currency": "PKR",
         "location": "Lahore",
         "type": "used",
-        "featured": true
+        "featured": true,
+        "managed": true
     },
     {
         "id": 8,
@@ -77,6 +84,7 @@
         "currency": "PKR",
         "location": "Karachi",
         "type": "used",
-        "featured": true
+        "featured": true,
+        "managed": true
     }
 ]

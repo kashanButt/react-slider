@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
 import "../../Styles/Slider.css";
 
 const Slider = () => {
@@ -39,7 +38,7 @@ const Slider = () => {
   return (
     <div className="slider">
       <h2 className="sliderHeading">Featured Used Cars for Sale</h2>
-      <Carousel className="carousel" responsive={responsive}>
+      <Carousel className="carousel" responsive={responsive} arrows>
         {data.filter(data => data.featured == true && data.type == 'used').map((data) => (
           <div className="sliderCard" key={data.id}>
             <img src={data.img_url} alt="" />

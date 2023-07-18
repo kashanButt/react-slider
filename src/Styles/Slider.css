@@ -49,8 +49,14 @@
 
 .react-multiple-carousel__arrow--right {
   right: calc(4% + -38px);
+  background-color: #ff0000;
 }
 
 .react-multiple-carousel__arrow--left {
+  background-color: #ff0000;
   left: calc(4% + -38px);
+}
+.react-multiple-carousel__arrow--right:hover,
+.react-multiple-carousel__arrow--left:hover {
+  background-color: green;
 }
