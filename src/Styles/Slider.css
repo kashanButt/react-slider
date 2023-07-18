@@ -7,6 +7,11 @@
     margin: 10px 0;
 }
 
+.carousel {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .card {
     display: flex;
     text-align: left;
@@ -41,8 +46,10 @@
     margin: 1%;
 }
 
-/* .slide {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 2%;
-} */
+.react-multiple-carousel__arrow--right {
+    right: calc(4% + -38px);
+}
+
+.react-multiple-carousel__arrow--left {
+    left: calc(4% + -38px);
+}
