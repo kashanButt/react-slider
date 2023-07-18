@@ -1,10 +1,17 @@
 import Container from "./Components/Container";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ProductPage from "./Components/ProductPage.js/ProductPage";
 
 function App() {
   return (
-    <div className="App">
-      <Container />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Container />}></Route>
+          <Route path="/product-page" element={<ProductPage />}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

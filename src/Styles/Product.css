@@ -1,0 +1,66 @@
+.option-active {
+  color: var(--red) !important;
+}
+.productContainerLayout {
+  width: 100%;
+  display: flex;
+}
+.productCarousel {
+  width: 45%;
+}
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 11px;
+  color: white;
+  margin: auto;
+}
+.carousel .thumb {
+  width: 11.5% !important;
+  height: 80px;
+}
+.carousel .thumb {
+  width: 11.5% !important;
+  height: 80px;
+}
+.carousel .thumb:hover,
+.selected {
+  border: none !important;
+}
+.carousel .slide img {
+  height: 400px;
+}
+.carousel .thumb img {
+  height: 100%;
+}
+.carousel .carousel-status,
+.carousel .control-dots .dot,
+.carousel .thumbs {
+  display: none;
+}
+.SideBarLeft {
+  width: 30%;
+}
+.SideBarLeft .options {
+  position: absolute;
+  width: 48%;
+  margin: 15% 0;
+  padding: 2%;
+}
+.SideBarLeft .options li {
+  line-height: 35px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+.SideBarLeft .options li:hover {
+  color: var(--red);
+}
+.icon {
+  font-size: 10px;
+  margin-top: -2px;
+}

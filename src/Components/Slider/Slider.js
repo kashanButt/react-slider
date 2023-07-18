@@ -2,12 +2,14 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "../../Styles/Slider.css";
+import style from "../../Styles/Slider.module.css";
+import { NavLink } from "react-router-dom";
+import ProductPage from "../ProductPage.js/ProductPage";
 
-const Slider = () => {
+const Slider = ({heading}) => {
   const [data, setData] = useState([]);
   const fetchData = () => {
-    fetch("./data.json")
+    fetch("./basic-slider-data.json")
       .then((response) => {
         return response.json();
       })
@@ -36,21 +38,25 @@ const Slider = () => {
     },
   };
   return (
-    <div className="slider">
-      <h2 className="sliderHeading">Featured Used Cars for Sale</h2>
-      <Carousel className="carousel" responsive={responsive} arrows>
-        {data.filter(data => data.featured == true && data.type == 'used').map((data) => (
-          <div className="sliderCard" key={data.id}>
-            <img src={data.img_url} alt="" />
-            <p className="vehicleTitle">{data.title}</p>
-            <p className="vehiclePrice">
-              <span className="currency">{data.currency}</span> {data.price}
-            </p>
-            <p className="vehicleLocation">{data.location}</p>
-          </div>
-        ))}
+    <div className={style.slider}>
+      <h2 className={style.sliderHeading}>{heading}</h2>
+      <Carousel className={style.carousel} responsive={responsive} infiniteLoop>
+        {data
+          .filter((data) => data.featured == true && data.type == "used")
+          .map((data) => (
+            <div className={style.sliderCard} key={data.id}>
+              <NavLink to="/product-page">
+                <img src={data.img_url} alt="" />
+                <p className={style.vehicleTitle}>{data.title}</p>
+                <p className={style.vehiclePrice}>
+                  <span className={style.currency}>{data.currency}</span> {data.price}
+                </p>
+                <p className={style.vehicleLocation}>{data.location}</p>
+              </NavLink>
+            </div>
+          ))}
       </Carousel>
-      ;
+      {/* <ProductPage id={1} /> */}
     </div>
   );
 };
