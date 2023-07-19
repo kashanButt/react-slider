@@ -4,7 +4,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from "../../Styles/Slider.module.css";
 import { NavLink } from "react-router-dom";
-import ProductPage from "../ProductPage.js/ProductPage";
 
 const Slider = ({heading}) => {
   const [data, setData] = useState([]);
@@ -56,7 +55,6 @@ const Slider = ({heading}) => {
             </div>
           ))}
       </Carousel>
-      {/* <ProductPage id={1} /> */}
     </div>
   );
 };

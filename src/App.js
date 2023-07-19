@@ -1,6 +1,6 @@
 import Container from "./Components/Container";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ProductPage from "./Components/ProductPage.js/ProductPage";
+import ProductPage from "./Components/ProductPage/index";
 
 function App() {
   return (

@@ -1,15 +1,14 @@
 import React from "react";
-import SideBarLeft from "./SideBarLeft";
-import MainProductContent from "./MainProductContent";
-import SideBarRight from "./SideBarRight";
+import SideBarLeft from "./Components/Sidebar/SideBarLeft";
+import ProductContent from "./Components/MainContent";
+import SideBarRight from "./Components/Sidebar/sideBarRight";
 import "../../Styles/Product.css"
-
 
 const ProductPage = () => {
   return (
     <div className="productContainerLayout">
       <SideBarLeft />
-      <MainProductContent />
+      <ProductContent />
       <SideBarRight />
     </div>
   );
