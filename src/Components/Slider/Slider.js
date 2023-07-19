@@ -45,7 +45,7 @@ const Slider = ({heading}) => {
           .filter((data) => data.featured == true && data.type == "used")
           .map((data) => (
             <div className={style.sliderCard} key={data.id}>
-              <NavLink to="/product-page">
+              <NavLink to="/product-page" data={data}>
                 <img src={data.img_url} alt="" />
                 <p className={style.vehicleTitle}>{data.title}</p>
                 <p className={style.vehiclePrice}>

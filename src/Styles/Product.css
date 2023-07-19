@@ -9,7 +9,7 @@
 
 .MainProductContent {
   width: 38%;
-  margin: 2%;
+  margin: 1%;
   box-shadow: 0 0 1px 0;
 }
 
@@ -107,7 +107,7 @@
   display: flex;
 }
 
-.vehicleInfo .baseInfo>.info {
+.vehicleInfo .baseInfo > .info {
   width: 23%;
   padding: 2%;
   text-align: center;
@@ -115,20 +115,20 @@
   margin-bottom: 10px;
 }
 
-.vehicleInfo .baseInfo>.info:nth-child(1) {
+.vehicleInfo .baseInfo > .info:nth-child(1) {
   border-left: none;
 }
 
-.vehicleInfo .baseInfo>.info:nth-child(4) {
+.vehicleInfo .baseInfo > .info:nth-child(4) {
   border-right: none;
 }
 
-.vehicleInfo .baseInfo>.info>.icon {
+.vehicleInfo .baseInfo > .info > .icon {
   font-size: 25px;
   margin-bottom: 5px;
 }
 
-.vehicleInfo .baseInfo>.info>p {
+.vehicleInfo .baseInfo > .info > p {
   color: var(--blue);
 }
 
@@ -139,7 +139,7 @@
   flex-wrap: wrap;
 }
 
-.vehicleInfo .moreInfo>.info {
+.vehicleInfo .moreInfo > .info {
   width: 44%;
   padding: 2%;
   margin-right: 2%;
@@ -147,16 +147,16 @@
   font-size: 13px;
 }
 
-.vehicleInfo .moreInfo>.info:nth-child(1),
-.vehicleInfo .moreInfo>.info:nth-child(2) {
+.vehicleInfo .moreInfo > .info:nth-child(1),
+.vehicleInfo .moreInfo > .info:nth-child(2) {
   padding-top: 0;
 }
 
-.vehicleInfo .moreInfo>.info>.row-one {
+.vehicleInfo .moreInfo > .info > .row-one {
   float: left;
 }
 
-.vehicleInfo .moreInfo>.info>.row-two {
+.vehicleInfo .moreInfo > .info > .row-two {
   float: right;
 }
 
@@ -164,7 +164,7 @@
   margin: 4%;
   width: 85%;
   padding: 3%;
-  background-color: #F2F3F3;
+  background-color: #f2f3f3;
 }
 
 .inspReport .learnMore {
@@ -181,7 +181,7 @@
   background-color: var(--blue);
   color: white;
   border-radius: 2px;
-  transition: .2s ease all;
+  transition: 0.2s ease all;
   cursor: pointer;
 }
 
@@ -190,41 +190,168 @@
   color: var(--blue);
 }
 
-.inspReport>.inspStats {
+.inspReport > .inspStats {
   width: 100%;
   padding: 2% 0;
   margin-top: 5px;
 }
 
-.inspReport>.inspStats>p {
+.inspReport > .inspStats > p {
   float: left;
 }
 
-.inspReport>.inspStats>span {
+.inspReport > .inspStats > span {
   float: right;
   color: var(--blue);
   font-weight: 500;
 }
 
-.inspReport>.inspStats>hr {
+.inspReport > .inspStats > hr {
   margin: 10px 0;
   border: 1px solid lightgray;
 }
 
-.inspReport>.inspStats>.ratings {
+.inspReport > .inspStats > .ratings {
   padding: 5px 0;
   margin-top: 5px;
 }
 
-.inspReport>.inspStats>.ratings .progress {
+.inspReport > .inspStats > .ratings .progress {
   margin-top: 5px;
   border-radius: 25px;
 }
 
-.inspReport>.inspStats>.ratings>.row-one {
+.inspReport > .inspStats > .ratings > .row-one {
   float: left;
 }
 
-.inspReport>.inspStats>.ratings>.row-two {
+.inspReport > .inspStats > .ratings > .row-two {
   float: right;
+}
+.sellerComments {
+  width: 98%;
+  padding: 5%;
+}
+.sellerComments h2 {
+  margin: 10px 0;
+}
+.sellerComments p {
+  line-height: 25px;
+  font-size: 15px;
+}
+.SideBarRight {
+  width: 26%;
+  margin: 0.7%;
+}
+.SideBarRightUpper {
+  width: 100%;
+  margin: 1%;
+  box-shadow: 0 0 1px 0;
+  text-align: center;
+}
+.SideBarRightUpper .price {
+  width: 98%;
+  padding: 2%;
+}
+.SideBarRightUpper .price > h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--green);
+  margin-bottom: 15px;
+}
+.SideBarRightUpper .price > span {
+  border-radius: 25px;
+  background-color: var(--blue);
+  color: white;
+  padding: 1% 5%;
+  font-size: 13px;
+}
+.SideBarRightUpper .managedBy {
+  width: 96%;
+  padding: 5% 2%;
+  margin: 15px 0;
+  background-color: #eaf0ff;
+  font-weight: 500;
+}
+.SideBarRightUpper .managedBy h3 {
+  margin: 10px 0;
+}
+.SideBarRightUpper .managedBy > .images {
+  width: 100%;
+  display: flex;
+}
+.SideBarRightUpper .managedBy > .images > .img {
+  width: 31%;
+  padding: 2%;
+}
+.SideBarRightUpper .managedBy > .images > .img > img {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.btns > button {
+  width: 90%;
+  padding: 3% 0;
+  margin: 5px auto;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btns > button:nth-child(1) {
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  color: white;
+}
+.btns > button:nth-child(2) {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  background-color: inherit;
+}
+.btns > button > .icons {
+  margin-bottom: -2px;
+}
+.SideBarRightBottom {
+  width: 98%;
+  padding: 2%;
+  margin: 1%;
+  margin-top: 5%;
+  box-shadow: 0 0 1px 0;
+  text-align: center;
+}
+.SideBarRightBottom h2 {
+  margin: 10px 0;
+}
+.SideBarRightBottom hr {
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+.SideBarRightBottom hr:nth-child(4) {
+  width: 50%;
+  margin: 10px auto;
+}
+.SideBarRightBottom .dealerInfo {
+  width: 70%;
+  margin: auto;
+}
+.SideBarRightBottom .dealerInfo .info > .heading {
+  width: 40%;
+  text-align: left !important;
+}
+.SideBarRightBottom .dealerInfo .info > .heading span {
+  float: right;
+  margin-right: 10px;
+}
+.SideBarRightBottom .dealerInfo .info > .content {
+  width: 60%;
+  text-align: left !important;
+}
+.dealerInfo > .info {
+  text-align: center;
+  display: flex;
+  padding: 3% 0;
+}
+.dealerInfo > .info {
+  text-align: center;
+  display: flex;
+  padding: 3% 0;
 }
