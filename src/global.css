@@ -3,7 +3,9 @@
   --blue: #233d7b;
   --green: green;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +19,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {

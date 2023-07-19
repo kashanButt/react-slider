@@ -7,27 +7,50 @@ const SideBarLeft = () => {
   const [inspReport, setInspReport] = useState(false);
   const [sellComment, setSellComment] = useState(false);
   const [simAds, setSimAds] = useState(false);
+
   return (
     <div className="SideBarLeft">
       <div className="options">
         <ul>
-          <li className={`${carInfo ? "option-active" : ""}`} onClick={() => setCarInfo((active) => !active)}>
-            <BiSolidRightArrow className="icon" /> Car Info
+          <li
+            className={`${carInfo ? "option-active" : ""}`}
+            onClick={() => setCarInfo((active) => !active)}
+          >
+            <a href="#MainProductContent">
+              <BiSolidRightArrow className="icon" /> Car Info
+            </a>
           </li>
           <li
             className={`${carDetails ? "option-active" : ""}`}
             onClick={() => setCarDetails((active) => !active)}
           >
-            <BiSolidRightArrow className="icon" /> Car Details
+            <a href="#vehicleInfo">
+              <BiSolidRightArrow className="icon" /> Car Details
+            </a>
           </li>
-          <li className={`${inspReport ? "option-active" : ""}`} onClick={() => setInspReport((active) => !active)}>
-            <BiSolidRightArrow className="icon" /> Inspection Report
+          <li
+            className={`${inspReport ? "option-active" : ""}`}
+            onClick={() => setInspReport((active) => !active)}
+          >
+            <a href="#inspReport">
+              <BiSolidRightArrow className="icon" /> Inspection Report
+            </a>
           </li>
-          <li className={`${sellComment ? "option-active" : ""}`} onClick={() => setSellComment((active) => !active)}>
-            <BiSolidRightArrow className="icon" /> Seller's Comments
+          <li
+            className={`${sellComment ? "option-active" : ""}`}
+            onClick={() => setSellComment((active) => !active)}
+          >
+            <a href="#sellerComments">
+              <BiSolidRightArrow className="icon" /> Seller's Comments
+            </a>
           </li>
-          <li className={`${simAds ? "option-active" : ""}`} onClick={() => setSimAds((active) => !active)}>
-            <BiSolidRightArrow className="icon" /> Similar Ads
+          <li
+            className={`${simAds ? "option-active" : ""}`}
+            onClick={() => setSimAds((active) => !active)}
+          >
+            <a href="#">
+              <BiSolidRightArrow className="icon" /> Similar Ads
+            </a>
           </li>
         </ul>
       </div>

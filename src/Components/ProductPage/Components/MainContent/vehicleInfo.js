@@ -6,7 +6,7 @@ import { TbManualGearbox } from "react-icons/tb";
 
 const vehicleInfo = () => {
   return (
-    <div className="vehicleInfo">
+    <div className="vehicleInfo" id="vehicleInfo">
       <div className="baseInfo">
         <div className="info">
           <GoCalendar className="icon" />

@@ -4,7 +4,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 
 const inspReport = () => {
   return (
-    <div className="inspReport">
+    <div className="inspReport" id="inspReport">
       <h2>Inspection Report</h2>
       <p>Inspected Date: 05/13/23</p>
       <div className="inspStats">

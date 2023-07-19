@@ -355,3 +355,6 @@
   display: flex;
   padding: 3% 0;
 }
+.red{
+  color: red !important;
+}
