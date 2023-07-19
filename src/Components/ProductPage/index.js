@@ -1,6 +1,6 @@
 import React from "react";
 import SideBarLeft from "./Components/Sidebar/SideBarLeft";
-import ProductContent from "./Components/MainContent";
+import ProductContent from "./Components/mainContent";
 import SideBarRight from "./Components/Sidebar/sideBarRight";
 import "../../Styles/Product.css"
 
