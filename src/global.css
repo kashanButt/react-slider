@@ -1,5 +1,7 @@
 :root {
   --red: #b73439;
+  --blue: #233d7b;
+  --green: green;
 }
 
 * {
@@ -7,6 +9,12 @@
   padding: 0;
   list-style: none;
 }
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
 }

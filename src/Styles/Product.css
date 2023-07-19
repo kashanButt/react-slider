@@ -1,13 +1,39 @@
 .option-active {
   color: var(--red) !important;
 }
+
 .productContainerLayout {
   width: 100%;
   display: flex;
 }
-.productCarousel {
-  width: 45%;
+
+.MainProductContent {
+  width: 38%;
+  margin: 2%;
+  box-shadow: 0 0 1px 0;
 }
+
+.MainProductContent .heading {
+  width: 98%;
+  padding: 2%;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.MainProductContent .heading p {
+  color: var(--blue);
+}
+
+.MainProductContent .heading .locationIcon {
+  margin: 0 5px -2px 0;
+}
+
+.productCarousel {
+  width: 96%;
+  padding: 2%;
+  padding-bottom: 0;
+}
+
 .carousel.carousel-slider .control-arrow {
   top: 0;
   color: #fff;
@@ -18,38 +44,43 @@
   color: white;
   margin: auto;
 }
+
 .carousel .thumb {
   width: 11.5% !important;
   height: 80px;
 }
+
 .carousel .thumb {
   width: 11.5% !important;
   height: 80px;
 }
+
 .carousel .thumb:hover,
 .selected {
   border: none !important;
 }
+
 .carousel .slide img {
   height: 400px;
 }
-.carousel .thumb img {
-  height: 100%;
-}
+
 .carousel .carousel-status,
 .carousel .control-dots .dot,
 .carousel .thumbs {
   display: none;
 }
+
 .SideBarLeft {
-  width: 30%;
+  width: 20%;
 }
+
 .SideBarLeft .options {
-  position: absolute;
-  width: 48%;
+  position: fixed;
+  width: 15%;
   margin: 15% 0;
   padding: 2%;
 }
+
 .SideBarLeft .options li {
   line-height: 35px;
   font-weight: 500;
@@ -57,10 +88,143 @@
   cursor: pointer;
   transition: 0.2s ease all;
 }
+
 .SideBarLeft .options li:hover {
   color: var(--red);
 }
+
 .icon {
   font-size: 10px;
   margin-top: -2px;
+}
+
+.vehicleInfo {
+  width: 100%;
+}
+
+.vehicleInfo .baseInfo {
+  width: 100%;
+  display: flex;
+}
+
+.vehicleInfo .baseInfo>.info {
+  width: 23%;
+  padding: 2%;
+  text-align: center;
+  border: 1px solid lightgrey;
+  margin-bottom: 10px;
+}
+
+.vehicleInfo .baseInfo>.info:nth-child(1) {
+  border-left: none;
+}
+
+.vehicleInfo .baseInfo>.info:nth-child(4) {
+  border-right: none;
+}
+
+.vehicleInfo .baseInfo>.info>.icon {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.vehicleInfo .baseInfo>.info>p {
+  color: var(--blue);
+}
+
+.vehicleInfo .moreInfo {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vehicleInfo .moreInfo>.info {
+  width: 44%;
+  padding: 2%;
+  margin-right: 2%;
+  border-bottom: 1px solid lightgrey;
+  font-size: 13px;
+}
+
+.vehicleInfo .moreInfo>.info:nth-child(1),
+.vehicleInfo .moreInfo>.info:nth-child(2) {
+  padding-top: 0;
+}
+
+.vehicleInfo .moreInfo>.info>.row-one {
+  float: left;
+}
+
+.vehicleInfo .moreInfo>.info>.row-two {
+  float: right;
+}
+
+.inspReport {
+  margin: 4%;
+  width: 85%;
+  padding: 3%;
+  background-color: #F2F3F3;
+}
+
+.inspReport .learnMore {
+  padding: 2% 5%;
+  margin-right: 10px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 2px;
+}
+
+.inspReport .viewInspReport {
+  padding: 1.8% 17.5%;
+  border: 2px solid var(--blue);
+  background-color: var(--blue);
+  color: white;
+  border-radius: 2px;
+  transition: .2s ease all;
+  cursor: pointer;
+}
+
+.inspReport .viewInspReport:hover {
+  background-color: inherit;
+  color: var(--blue);
+}
+
+.inspReport>.inspStats {
+  width: 100%;
+  padding: 2% 0;
+  margin-top: 5px;
+}
+
+.inspReport>.inspStats>p {
+  float: left;
+}
+
+.inspReport>.inspStats>span {
+  float: right;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.inspReport>.inspStats>hr {
+  margin: 10px 0;
+  border: 1px solid lightgray;
+}
+
+.inspReport>.inspStats>.ratings {
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+.inspReport>.inspStats>.ratings .progress {
+  margin-top: 5px;
+  border-radius: 25px;
+}
+
+.inspReport>.inspStats>.ratings>.row-one {
+  float: left;
+}
+
+.inspReport>.inspStats>.ratings>.row-two {
+  float: right;
 }

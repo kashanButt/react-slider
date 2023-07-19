@@ -29,13 +29,13 @@
 }
 
 .vehicleTitle {
-  color: #233d7b;
+  color: var(--blue);
   font-weight: 500;
   margin-top: 5px;
 }
 
 .vehiclePrice {
-  color: green;
+  color: var(--green);
 }
 
 .vehicleLocation {
